@@ -13,10 +13,6 @@ import android.view.View;
 
 public class ColorPickerRect extends Dialog {
 
-    public interface OnColorChangedListener {
-        void colorChanged(String key, int color);
-    }
-
     private OnColorChangedListener mListener;
     private int mInitialColor, mDefaultColor;
     private String mKey;
@@ -295,6 +291,5 @@ public class ColorPickerRect extends Dialog {
         setContentView(new ColorPickerView(getContext(), l, mInitialColor,
                 mDefaultColor));
         setTitle("Pick a color");
-
     }
 }

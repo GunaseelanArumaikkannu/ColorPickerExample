@@ -164,6 +164,7 @@ public class ColorPickerOvalView extends View {
                         unit += 1;
                     }
                     mCenterPaint.setColor(interpColor(mColors, unit));
+                    mListener.colorChanging(mCenterPaint.getColor());
                     invalidate();
                 }
                 break;

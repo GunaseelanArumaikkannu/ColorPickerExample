@@ -30,4 +30,9 @@ public class MainActivity extends AppCompatActivity implements OnColorChangedLis
         this.findViewById(android.R.id.content)
                 .setBackgroundColor(color);
     }
+
+    @Override
+    public void colorChanging(int color) {
+
+    }
 }

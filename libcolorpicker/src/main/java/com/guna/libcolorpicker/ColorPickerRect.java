@@ -286,6 +286,11 @@ public class ColorPickerRect extends Dialog {
                 mListener.colorChanged(mKey, color);
                 dismiss();
             }
+
+            @Override
+            public void colorChanging(int color) {
+
+            }
         };
 
         setContentView(new ColorPickerView(getContext(), l, mInitialColor,
